@@ -11,12 +11,12 @@ fibs = 1 : 2 : zipWith (+) fibs (tail fibs)
 -- sum (filter (\x -> x <= 4000000 && x `mod` 2 == 0) ((take 1000 fibs)))
 
 
--- solution 3 
+-- solution 2
 -- Requires fibs from above
 
 -- sum $ takeWhile (<= 4000000) $ filter even fibs
 
 
--- solution 3
+-- solution 2 alt.
 
 -- sum . takeWhile (<= 4000000) . filter even $ fibs
